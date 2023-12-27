@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/adytronic-media/static/css/main.7587b926.css",
+    "main.js": "/adytronic-media/static/js/main.00aaa56f.js",
+    "static/js/787.88e2e819.chunk.js": "/adytronic-media/static/js/787.88e2e819.chunk.js",
+    "index.html": "/adytronic-media/index.html",
+    "main.7587b926.css.map": "/adytronic-media/static/css/main.7587b926.css.map",
+    "main.00aaa56f.js.map": "/adytronic-media/static/js/main.00aaa56f.js.map",
+    "787.88e2e819.chunk.js.map": "/adytronic-media/static/js/787.88e2e819.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7587b926.css",
+    "static/js/main.00aaa56f.js"
+  ]
+}
