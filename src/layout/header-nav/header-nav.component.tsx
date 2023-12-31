@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import UiButton from "../../ui/ui-button/ui-button.component";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import UiDrawer from "../../ui/ui-drawer/ui-drawer.component";
 import MenuDrawer from "./menu-drawer/menu-drawer.component";
 import { MAIN_MENUS } from "../../shared/constants/menu-list";
+import { NavLink } from "react-router-dom";
 const HeaderNav = () => {
   const [isMenuDrawerOpen, setIsMenuDrawerOpen] = useState(false);
   const menuClicked = () => {
     setIsMenuDrawerOpen(!isMenuDrawerOpen);
   };
   return (
-    <div className="header flex justify-between items-center shadow-sm h-[100px] w-full">
+    <div className="header flex justify-between items-center shadow-sm h-[100px] w-full bg-transparent sticky">
       <div className="brand px-10 h-full flex items-center lg:border-r">
         <img
           className="w-[142px]"
@@ -29,12 +28,12 @@ const HeaderNav = () => {
       {/* Desktop Navigation */}
       <div className="hidden lg:flex gap-2 mr-5 h-[100px] items-center border-l px-10 md:px-6">
         {MAIN_MENUS.map((item, index) => (
-          <a
-            href={item.link}
-            className="py-3 px-4 font-semibold transition-all rounded-sm duration-300 ease-in hover:text-primary-default hover:bg-primary-lighter tracking-widest xl:px-7"
+          <NavLink
+            to={item.link}
+            className="py-3 px-4 font-semibold transition-all rounded-md duration-200 ease-in hover:text-white hover:bg-primary-default tracking-widest xl:px-7"
             key={index}>
             {item.label}
-          </a>
+          </NavLink>
         ))}
       </div>
       {/* Desktop Navigation */}

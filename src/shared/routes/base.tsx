@@ -4,11 +4,10 @@ import { RouteObject, createBrowserRouter } from "react-router-dom";
 
 const routes = [
   {
-    path: "/",
     element: <LayoutComponent />,
     children: [
       {
-        path: "/home",
+        path: "/",
         element: <HomePage />,
       },
     ],

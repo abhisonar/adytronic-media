@@ -14,3 +14,15 @@ export enum SizeEnum {
   medium = "medium",
   large = "large",
 }
+
+export enum IconColorEnum {
+  primary = "primary",
+  disabled = "disabled",
+  action = "action",
+  inherit = "inherit",
+  secondary = "secondary",
+  error = "error",
+  info = "info",
+  success = "success",
+  warning = "warning",
+}

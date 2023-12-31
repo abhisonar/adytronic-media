@@ -3,7 +3,7 @@ import { IMainMenu } from "../interfaces/base/IMainMenu";
 export const MAIN_MENUS: IMainMenu[] = [
   {
     label: "HOME",
-    link: `/home`,
+    link: `/`,
     hasSubMenu: false,
   },
   {

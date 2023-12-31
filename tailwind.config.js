@@ -19,6 +19,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/public/assets/hero-section/slider-grident-bg.png')",
+      },
       colors: {
         primary: {
           default: "var(--primary-color)",

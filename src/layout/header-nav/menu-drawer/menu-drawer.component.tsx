@@ -13,6 +13,10 @@ interface IMenuDrawer {
 const MenuDrawer: React.FC<IMenuDrawer> = ({ isMenuDrawerOpen, menuClicked }) => {
   const [expandedMenuIndex, setExpandedMenuIndex] = useState<number | null>(null);
 
+  const updateExpansion = (index: number) => {
+    setExpandedMenuIndex(expandedMenuIndex === index ? null : index);
+  };
+
   const isCurrentIndex = (index: number) => {
     return expandedMenuIndex === index;
   };
@@ -46,10 +50,10 @@ const MenuDrawer: React.FC<IMenuDrawer> = ({ isMenuDrawerOpen, menuClicked }) =>
                     className={`p-1 border-gray-700 border transition duration-100 ease-in cursor-pointer z-10 rounded ${
                       isCurrentIndex(index) && "bg-white"
                     }`}
-                    onClick={() => setExpandedMenuIndex(index)}>
+                    onClick={() => updateExpansion(index)}>
                     <AddRoundedIcon
-                      className={`text-white  !transition !duration-100 !ease-linear ${
-                        isCurrentIndex(index) && "rotate-45 text-black"
+                      className={`!transition !duration-100 !ease-linear ${
+                        isCurrentIndex(index) ? "rotate-45 text-black" : "text-white"
                       }`}
                     />
                   </span>

@@ -24,9 +24,8 @@ const UiButton: React.FC<IButtonProps> = ({
       variant={variant}
       size={size}
       color={color}
-      className={className}
-      onClick={() => clicked()}
-    >
+      className={`!${className}`}
+      onClick={() => clicked()}>
       {children}
     </Button>
   );
