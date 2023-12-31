@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/public/assets/hero-section/slider-grident-bg.png')",
+        "hero-pattern": "url('/src/assets/hero-section/slider-grident-bg.png')",
       },
       colors: {
         primary: {
