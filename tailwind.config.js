@@ -4,23 +4,26 @@ module.exports = {
   theme: {
     screens: {
       sm: "450px",
-      // => @media (min-width: 640px) { ... }
+      // => @media (min-width: 450px) { ... }
 
       md: "650px",
-      // => @media (min-width: 768px) { ... }
+      // => @media (min-width: 650px) { ... }
 
       lg: "850px",
-      // => @media (min-width: 1024px) { ... }
+      // => @media (min-width: 850px) { ... }
 
-      xl: "1280px",
+      xl: "1080px",
+      // => @media (min-width: 1080px) { ... }
+
+      "2xl": "1280px",
       // => @media (min-width: 1280px) { ... }
-
-      "2xl": "1536px",
+      "3xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/hero-section/slider-grident-bg.png')",
+        "hero-img-1": "url('/src/assets/hero-section/hero-1.png')",
       },
       colors: {
         primary: {

@@ -3,19 +3,20 @@ import "./hero-section.component.scss";
 import UiHeaderChip from "../../../ui/ui-header-chip/ui-header-chip.component";
 import UiButton from "../../../ui/ui-button/ui-button.component";
 import AlternateEmailRoundedIcon from "@mui/icons-material/AlternateEmailRounded";
+import HeroImg1 from "../../../assets/hero-section/hero-1.png";
 
 const HeroSection = () => {
   return (
     <div
-      className={`bg-hero-pattern  flex flex-col px-4 pt-[150px] h-[100vh] mt-[-100px] lg:pt-[200px]:px-[100px]`}>
-      <div className="hero-left">
+      className={`bg-hero-pattern  flex flex-col px-4 pt-[150px] h-full mt-[-100px] lg:pt-[200px]:px-[100px] lg:flex-row items-center justify-center lg:px-[80px] lg:justify-evenly`}>
+      <div className="hero-left basis-2/4">
         <UiHeaderChip>
           <span className="font-medium">Best Solution we offer you</span>
         </UiHeaderChip>
-        <h1 className="text-3xl lg:text-4xl font-semibold mt-7">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold mt-7 max-w-100px">
           Make a good plan & grow your business
         </h1>
-        <p className="text-md mt-7">
+        <p className="text-md mt-7 lg:text-2xl">
           We have almost 12+ years of experience for helping consulting services and business
           solutions.
         </p>
@@ -36,7 +37,11 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="hero-right"></div>
+      <div className="hero-right mt-12">
+        <div>
+          <img src={HeroImg1} alt="hero-img-1"></img>
+        </div>
+      </div>
     </div>
   );
 };
