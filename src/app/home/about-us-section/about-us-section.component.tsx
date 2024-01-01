@@ -15,10 +15,10 @@ const AboutUsSection = () => {
         <UiHeaderChip bulletsColor="success">
           <span className="font-medium">Who we are?</span>
         </UiHeaderChip>
-        <h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold mt-7 max-w-100px">
+        <h1 className="text-1xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-7 max-w-100px">
           We are dynamic team of creative design and development
         </h1>
-        <p className="text-md mt-7 lg:text-2xl">
+        <p className="text-md mt-7 lg:text-1xl">
           We have almost 12+ years of experience for helping consulting services and business
           solutions and best protect.
         </p>
@@ -29,7 +29,7 @@ const AboutUsSection = () => {
             color="primary"
             size="large"
             className="rounded-full !px-10 !py-3 !drop-shadow-lg">
-            <span className="text-lg">About Us</span>
+            <span className="text-md">About Us</span>
           </UiButton>
         </div>
       </div>
@@ -38,7 +38,7 @@ const AboutUsSection = () => {
         data-aos={matches_lg ? "fade-left" : "zoom-in-up"}
         data-aos-duration="2000">
         <div className="relative">
-          <img src={AboutImg1} alt="hero-img-1"></img>
+          <img src={AboutImg1} alt="hero-img-1" className="max-h-[500px]"></img>
           <img
             src={AboutShape}
             alt="about-star-shape"

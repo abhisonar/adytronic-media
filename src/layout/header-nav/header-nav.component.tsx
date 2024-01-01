@@ -27,7 +27,7 @@ const HeaderNav = () => {
         {MAIN_MENUS.map((item, index) => (
           <NavLink
             to={item.link}
-            className="py-3 px-4 font-semibold transition-all rounded-md duration-200 ease-in hover:text-white hover:bg-primary-default tracking-widest xl:px-7"
+            className="py-3 px-4 text-sm font-semibold transition-all rounded-md duration-200 ease-in hover:text-white hover:bg-primary-default tracking-widest xl:px-7"
             key={index}>
             {item.label}
           </NavLink>

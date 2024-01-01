@@ -18,10 +18,10 @@ const HeroSection = () => {
         <UiHeaderChip>
           <span className="font-medium">Best Solution we offer you</span>
         </UiHeaderChip>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-semibold mt-7 max-w-100px">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mt-7 max-w-100px">
           Make a good plan & grow your business
         </h1>
-        <p className="text-md mt-7 lg:text-2xl">
+        <p className="text-md mt-7 lg:text-1xl">
           We have almost 12+ years of experience for helping consulting services and business
           solutions.
         </p>
@@ -47,7 +47,7 @@ const HeroSection = () => {
         data-aos={matches_lg ? "fade-left" : "zoom-in-up"}
         data-aos-duration="2000">
         <div className="relative">
-          <img src={HeroImg1} alt="hero-img-1"></img>
+          <img src={HeroImg1} alt="hero-img-1" className="max-h-[500px]"></img>
           <img
             src={HeroStartShape}
             alt="hero-star-shape"
