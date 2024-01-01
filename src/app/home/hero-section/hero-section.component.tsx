@@ -4,11 +4,16 @@ import UiHeaderChip from "../../../ui/ui-header-chip/ui-header-chip.component";
 import UiButton from "../../../ui/ui-button/ui-button.component";
 import AlternateEmailRoundedIcon from "@mui/icons-material/AlternateEmailRounded";
 import HeroImg1 from "../../../assets/hero-section/hero-1.png";
+import HeroStartShape from "../../../assets/common/hero-star-shape.png";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const HeroSection = () => {
+  const theme = useTheme();
+  const matches_lg = useMediaQuery(theme.breakpoints.up("lg"));
   return (
     <div
-      className={`bg-hero-pattern  flex flex-col px-4 pt-[150px] h-full mt-[-100px] lg:pt-[200px]:px-[100px] lg:flex-row items-center justify-center lg:px-[80px] lg:justify-evenly`}>
+      className={`bg-hero-pattern  flex flex-col pb-10 px-4 pt-[150px] h-full mt-[-100px] lg:pt-[200px]:px-[100px] lg:flex-row items-center justify-center lg:px-[80px] lg:justify-evenly`}>
       <div className="hero-left basis-2/4">
         <UiHeaderChip>
           <span className="font-medium">Best Solution we offer you</span>
@@ -37,9 +42,16 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="hero-right mt-12">
-        <div>
+      <div
+        className="hero-right mt-12"
+        data-aos={matches_lg ? "fade-left" : "zoom-in-up"}
+        data-aos-duration="2000">
+        <div className="relative">
           <img src={HeroImg1} alt="hero-img-1"></img>
+          <img
+            src={HeroStartShape}
+            alt="hero-star-shape"
+            className="absolute top-5 right-0 animation-bounce-smooth w-[90px]"></img>
         </div>
       </div>
     </div>

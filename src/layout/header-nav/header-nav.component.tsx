@@ -3,6 +3,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import MenuDrawer from "./menu-drawer/menu-drawer.component";
 import { MAIN_MENUS } from "../../shared/constants/menu-list";
 import { NavLink } from "react-router-dom";
+import Logo from "../../assets/logo.png";
 const HeaderNav = () => {
   const [isMenuDrawerOpen, setIsMenuDrawerOpen] = useState(false);
   const menuClicked = () => {
@@ -11,11 +12,7 @@ const HeaderNav = () => {
   return (
     <div className="header flex justify-between items-center shadow-sm h-[100px] w-full bg-transparent sticky">
       <div className="brand px-10 h-full flex items-center lg:border-r">
-        <img
-          className="w-[142px]"
-          src="https://data.themeim.com/html/sixart/assets/img/logo/logo.png"
-          alt=""
-        />
+        <img className="w-[280px]" src={Logo} alt="" />
       </div>
       {/* Mobile Navigation */}
       <div className="block mr-5 lg:hidden">
