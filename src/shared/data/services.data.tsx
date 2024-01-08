@@ -5,7 +5,9 @@ interface IServiceData {
   title: string;
   icon: React.ReactElement;
   readMoreLink?: string;
-  statusColor?: string;
+  textColor?: string;
+  bgColor?: string;
+  iconBgColor?: string;
 }
 
 export const SERVICES_DATA: IServiceData[] = [
@@ -13,12 +15,16 @@ export const SERVICES_DATA: IServiceData[] = [
     slug: "web-development",
     title: "Web Development",
     icon: <CodeIcon />,
-    statusColor: "warn",
+    textColor: "text-warn-default",
+    bgColor: "bg-warn-lighter",
+    iconBgColor: "bg-warn-default",
   },
   {
     slug: "digital-marketing",
     title: "Digital Marketing",
     icon: <CodeIcon />,
-    statusColor: "success",
+    textColor: "text-success-default",
+    bgColor: "bg-success-lighter",
+    iconBgColor: "bg-success-default",
   },
 ];

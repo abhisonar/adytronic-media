@@ -35,19 +35,20 @@ const ServicesSection = () => {
       <div className="flex flex-col gap-3 mt-5 w-full lg:items-end basis-1/2 lg:mt-0">
         {SERVICES_DATA.map((item, index) => (
           <div
-            className={`flex flex-col gap-2 p-3 justify-center w-full  bg-${item.statusColor}-lighter rounded-xl max-w-[700px] lg:h-[180px] lg:p-8 lg:justify-center `}>
+            className={`flex flex-col gap-2 p-3 justify-center w-full  ${item.bgColor} rounded-xl max-w-[700px] lg:h-[180px] lg:p-8 lg:justify-center `}
+            key={index}>
             <div className="flex justify-between">
               <span className="font-semibold text-md lg:text-lg">{item.title}</span>
-              <div className={`bg-${item.statusColor}-default p-3 rounded-full text-white text-md`}>
+              <div className={` ${item.iconBgColor} p-3 rounded-full text-white text-md`}>
                 {item.icon}
               </div>
             </div>
             <div className="flex gap-2 items-center bg-white w-fit px-4 py-1 rounded-full cursor-pointer">
-              <div className={`bg-${item.statusColor}-default text-white rounded-full`}>
+              <div className={` ${item.iconBgColor} text-white rounded-full`}>
                 <ArrowForwardIcon />
               </div>
               <span
-                className={`text-sm font-medium transition-all duration-300 hover:text-${item.statusColor}-default`}>
+                className={`text-sm font-medium transition-all duration-300 hover:${item.textColor}`}>
                 READ MORE
               </span>
             </div>
