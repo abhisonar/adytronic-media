@@ -8,10 +8,10 @@ export const MAIN_MENUS: IMainMenu[] = [
   },
   {
     label: "OUR PROJECT",
-    link: `#out-project`,
+    link: `#our-project`,
     hasSubMenu: true,
     subMenus: [
-      { label: "Our Clients", link: "/out-clients" },
+      { label: "Our Clients", link: "/our-clients" },
       { label: "Client Testimonials", link: "/testimonials" },
     ],
   },

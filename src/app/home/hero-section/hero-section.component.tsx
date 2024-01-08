@@ -7,6 +7,7 @@ import HeroImg1 from "../../../assets/hero-section/hero-1.png";
 import HeroStartShape from "../../../assets/common/hero-star-shape.png";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
   const theme = useTheme();

@@ -34,7 +34,10 @@ module.exports = {
           default: "var(--warn-color)",
           lighter: "var(--warn-color-lighter)",
         },
-        success: {},
+        success: {
+          default: "var(--success-color)",
+          lighter: "var(--success-color-lighter)",
+        },
       },
       borderWidth: {},
     },

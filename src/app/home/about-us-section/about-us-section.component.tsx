@@ -10,12 +10,14 @@ const AboutUsSection = () => {
   const theme = useTheme();
   const matches_lg = useMediaQuery(theme.breakpoints.up("lg"));
   return (
-    <div className="flex flex-col mt-12 pb-10 px-4 pt-[10px] h-full lg:pt-[200px]:px-[100px] lg:flex-row-reverse items-center justify-center lg:px-[80px] lg:justify-evenly">
+    <div
+      className="flex flex-col mt-12 pb-10 px-4 pt-[10px] h-full lg:pt-[200px]:px-[100px] lg:flex-row-reverse items-center justify-center lg:px-[80px] lg:justify-evenly"
+      id="about-us">
       <div className="hero-left basis-2/4">
         <UiHeaderChip bulletsColor="success">
           <span className="font-medium">Who we are?</span>
         </UiHeaderChip>
-        <h1 className="text-1xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-7 max-w-100px">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mt-7 max-w-100px">
           We are dynamic team of creative design and development
         </h1>
         <p className="text-md mt-7 lg:text-1xl">
@@ -35,10 +37,10 @@ const AboutUsSection = () => {
       </div>
       <div
         className="hero-right mt-10"
-        data-aos={matches_lg ? "fade-left" : "zoom-in-up"}
+        data-aos={matches_lg ? "fade-right" : "zoom-in-up"}
         data-aos-duration="2000">
         <div className="relative">
-          <img src={AboutImg1} alt="hero-img-1" className="max-h-[500px]"></img>
+          <img src={AboutImg1} alt="hero-img-1" className="max-h-[450px]"></img>
           <img
             src={AboutShape}
             alt="about-star-shape"
