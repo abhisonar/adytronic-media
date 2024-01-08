@@ -11,7 +11,7 @@ const AboutUsSection = () => {
   const matches_lg = useMediaQuery(theme.breakpoints.up("lg"));
   return (
     <div
-      className="flex flex-col mt-12 pb-10 px-4 pt-[10px] h-full lg:pt-[200px]:px-[100px] lg:flex-row-reverse items-center justify-center lg:px-[80px] lg:justify-evenly"
+      className="flex flex-col mt-12 pb-10 px-4 pt-[10px] h-full lg:pt-[200px]:px-[100px] lg:flex-row-reverse items-center justify-center lg:px-[80px] lg:justify-between"
       id="about-us">
       <div className="hero-left basis-2/4">
         <UiHeaderChip bulletsColor="success">

@@ -6,11 +6,13 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const ServicesSection = () => {
   return (
-    <div className="flex flex-col p-4 lg:flex-row lg:justify-between" id="services">
-      <div className="flex flex-col justify-between">
+    <div
+      className="flex flex-col mt-12 pb-10 px-5 pt-[10px] lg:pt-[200px]:px-[80px] lg:flex-row gap-2 lg:px-[80px] lg:justify-between"
+      id="services">
+      <div className="flex flex-col justify-between basis-1/2">
         <div className="flex flex-col">
           <UiHeaderChip bulletsColor="warning">
-            <span className="font-medium">What we can do for you?</span>
+            <span className="font-medium text-sm">What we can do for you?</span>
           </UiHeaderChip>
           <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mt-7 max-w-100px">
             Service we can help you with
@@ -30,21 +32,24 @@ const ServicesSection = () => {
           </UiButton>
         </div>
       </div>
-      <div className="flex flex-col gap-3 mt-5 lg:basis-2/3">
-        {SERVICES_DATA.map((item) => (
+      <div className="flex flex-col gap-3 mt-5 w-full lg:items-end basis-1/2 lg:mt-0">
+        {SERVICES_DATA.map((item, index) => (
           <div
-            className={`flex flex-col gap-2 p-3  ${item.bgColor} rounded-xl w-full lg:h-[150px] lg:p-8 lg:justify-center `}>
+            className={`flex flex-col gap-2 p-3 justify-center w-full  bg-${item.statusColor}-lighter rounded-xl max-w-[700px] lg:h-[180px] lg:p-8 lg:justify-center `}>
             <div className="flex justify-between">
               <span className="font-semibold text-md lg:text-lg">{item.title}</span>
-              <div className={`${item.iconBgColor} p-3 rounded-full text-white text-md`}>
+              <div className={`bg-${item.statusColor}-default p-3 rounded-full text-white text-md`}>
                 {item.icon}
               </div>
             </div>
             <div className="flex gap-2 items-center bg-white w-fit px-4 py-1 rounded-full cursor-pointer">
-              <div className={`${item.iconBgColor} text-white rounded-full`}>
+              <div className={`bg-${item.statusColor}-default text-white rounded-full`}>
                 <ArrowForwardIcon />
               </div>
-              <span className="text-sm font-medium">READ MORE</span>
+              <span
+                className={`text-sm font-medium transition-all duration-300 hover:text-${item.statusColor}-default`}>
+                READ MORE
+              </span>
             </div>
           </div>
         ))}
