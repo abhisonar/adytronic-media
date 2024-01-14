@@ -1,14 +1,23 @@
 import { IMainMenu } from "../interfaces/base/IMainMenu";
 
+export enum RouteLinkEnum {
+  HOME = "/",
+  SERVICES = "/services",
+  OUR_PROJECT = "/our-project",
+  ABOUT_US = "/about-us",
+  CONTACT_US = "/contact-us",
+}
+
 export const MAIN_MENUS: IMainMenu[] = [
   {
     label: "HOME",
-    link: `/`,
+    link: RouteLinkEnum.HOME,
     hasSubMenu: false,
   },
   {
     label: "OUR PROJECT",
-    link: `#our-project`,
+    link: RouteLinkEnum.OUR_PROJECT,
+    subLink: "#our-project",
     hasSubMenu: true,
     subMenus: [
       { label: "Our Clients", link: "/our-clients" },
@@ -17,17 +26,20 @@ export const MAIN_MENUS: IMainMenu[] = [
   },
   {
     label: "SERVICES",
-    link: `#services`,
+    link: RouteLinkEnum.SERVICES,
+    subLink: `#services`,
     hasSubMenu: true,
   },
   {
     label: "ABOUT US",
-    link: `#about-us`,
+    link: RouteLinkEnum.ABOUT_US,
+    subLink: `#about-us`,
     hasSubMenu: true,
   },
   {
     label: "CONTACT",
-    link: `#contact`,
+    link: RouteLinkEnum.CONTACT_US,
+    subLink: `#contact-us`,
     hasSubMenu: true,
   },
 ];

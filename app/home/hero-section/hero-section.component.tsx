@@ -5,8 +5,6 @@ import "./hero-section.component.scss";
 import UiHeaderChip from "@ui/ui-header-chip/ui-header-chip.component";
 import UiButton from "@ui/ui-button/ui-button.component";
 import AlternateEmailRoundedIcon from "@mui/icons-material/AlternateEmailRounded";
-import HeroImg1 from "@assets/hero-section/hero-1.png";
-import HeroStartShape from "@assets/common/hero-star-shape.png";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Image from "next/image";
@@ -50,11 +48,14 @@ const HeroSection = () => {
         data-aos={matches_lg ? "fade-left" : "zoom-in-up"}
         data-aos-duration="2000">
         <div className="relative">
-          <Image src={HeroImg1} alt="hero-img-1" className="max-h-[500px]"></Image>
-          <Image
-            src={HeroStartShape}
+          <img
+            src={"/assets/hero-section/hero-1.png"}
+            alt="hero-img-1"
+            className="max-h-[500px]"></img>
+          <img
+            src={"/assets/common/hero-star-shape.png"}
             alt="hero-star-shape"
-            className="absolute top-5 right-0 animation-bounce-smooth w-[90px]"></Image>
+            className="absolute top-5 right-0 animation-bounce-smooth w-[90px]"></img>
         </div>
       </div>
     </div>

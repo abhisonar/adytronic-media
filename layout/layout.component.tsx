@@ -7,7 +7,7 @@ interface ILayout {
 
 const LayoutComponent: React.FC<ILayout> = ({ children }) => {
   return (
-    <div className="app-layout">
+    <div className="app-layout bg-redishWhite">
       <HeaderNav />
       <PageLayout>{children}</PageLayout>
     </div>

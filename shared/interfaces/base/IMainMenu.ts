@@ -7,6 +7,7 @@ interface ISubMenu {
 export interface IMainMenu {
   label: string;
   link: string;
+  subLink?: string;
   key?: string;
   hasSubMenu?: boolean;
   subMenus?: ISubMenu[];
