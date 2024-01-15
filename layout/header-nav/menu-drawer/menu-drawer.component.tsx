@@ -4,6 +4,7 @@ import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { MAIN_MENUS } from "../../../shared/constants/menu-list";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import MenuContactDetails from "./menu-contact-detail.component";
+import Link from "next/link";
 
 interface IMenuDrawer {
   isMenuDrawerOpen: boolean;
@@ -42,9 +43,12 @@ const MenuDrawer: React.FC<IMenuDrawer> = ({ isMenuDrawerOpen, menuClicked }) =>
               <div
                 className="flex justify-between items-center py-3 border-b border-b-gray-600 bg-black"
                 key={item.label}>
-                <a href={item?.link} className="text-white font-semibold text-sm">
+                <Link
+                  href={item?.link}
+                  className="text-white font-semibold text-sm"
+                  onClick={menuClicked}>
                   {item.label}
-                </a>
+                </Link>
                 {item.hasSubMenu && (
                   <span
                     className={`p-1 border-gray-700 border transition duration-100 ease-in cursor-pointer z-10 rounded ${
@@ -66,9 +70,9 @@ const MenuDrawer: React.FC<IMenuDrawer> = ({ isMenuDrawerOpen, menuClicked }) =>
                   }`}>
                   {item.subMenus?.map((subItem, subItemIndex) => (
                     <div className="py-3 border-b border-b-gray-600" key={subItem.label}>
-                      <a href={subItem.link} className="text-white font-semibold ml-5 text-sm">
+                      <Link href={subItem.link} className="text-white font-semibold ml-5 text-sm">
                         {subItem.label}
-                      </a>
+                      </Link>
                     </div>
                   ))}
                 </div>

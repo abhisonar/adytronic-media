@@ -18,7 +18,7 @@ export const MAIN_MENUS: IMainMenu[] = [
     label: "OUR PROJECT",
     link: RouteLinkEnum.OUR_PROJECT,
     subLink: "#our-project",
-    hasSubMenu: true,
+    hasSubMenu: false,
     subMenus: [
       { label: "Our Clients", link: "/our-clients" },
       { label: "Client Testimonials", link: "/testimonials" },
@@ -28,18 +28,18 @@ export const MAIN_MENUS: IMainMenu[] = [
     label: "SERVICES",
     link: RouteLinkEnum.SERVICES,
     subLink: `#services`,
-    hasSubMenu: true,
+    hasSubMenu: false,
   },
   {
     label: "ABOUT US",
     link: RouteLinkEnum.ABOUT_US,
     subLink: `#about-us`,
-    hasSubMenu: true,
+    hasSubMenu: false,
   },
   {
     label: "CONTACT",
     link: RouteLinkEnum.CONTACT_US,
     subLink: `#contact-us`,
-    hasSubMenu: true,
+    hasSubMenu: false,
   },
 ];

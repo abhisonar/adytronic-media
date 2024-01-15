@@ -39,7 +39,7 @@ const ServicesSection = () => {
         </div>
       </div>
       <div className="flex flex-col gap-3 mt-5 w-full lg:items-end basis-1/2 lg:mt-0">
-        {SERVICES_DATA.slice(1, 3).map((item, index) => (
+        {SERVICES_DATA.slice(0, 2).map((item, index) => (
           <div
             className={`${item.bgColor} flex flex-col gap-2 p-3 justify-center w-full rounded-xl max-w-[700px] lg:h-[180px] lg:p-8 lg:justify-center`}
             key={index}
