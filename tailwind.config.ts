@@ -32,6 +32,7 @@ const config: Config = {
       backgroundImage: {
         "hero-pattern": "url('/assets/hero-section/slider-grident-bg.png')",
         "hero-img-1": "url('/assets/hero-section/hero-1.png')",
+        "portfolio-pattern": "url('/assets/portfolio/case-grident-shape.png')",
       },
       colors: {
         primary: {
