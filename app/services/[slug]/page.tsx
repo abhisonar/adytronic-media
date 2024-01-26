@@ -1,4 +1,4 @@
-import { SERVICES_DATA } from "@/shared/data/services.data";
+import { SERVICES_DATA } from "@shared/data/services.data";
 import React from "react";
 
 export function generateStaticParams() {

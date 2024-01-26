@@ -1,3 +1,8 @@
+$black-opacity: rgba(
+  $color: #000000,
+  $alpha: 0.2,
+);
+
 :root {
   // colors
   // --primary-color: #6864ed;
@@ -9,4 +14,5 @@
   --success-color-lighter: #ebfaf2;
   --shadow-color: #e8eae2;
   --redish-white: #f7f7f7;
+  --black-opacity: $black-opacity;
 }

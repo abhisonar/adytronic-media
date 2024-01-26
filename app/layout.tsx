@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
-import LayoutComponent from "@/layout/layout.component";
+import LayoutComponent from "@layout/layout.component";
 import ThemeRegistry from "@ui/shared-resources/themes/ThemeRegistry";
 import Script from "next/script";
-import { AOSInit } from "@/shared/base/AOSInit";
+import AOSInit from "@shared/base/AOSInit";
 import { Suspense } from "react";
-import AppLoading from "@/app/loading";
+import AppLoading from "@app/loading";
 
 const inter = Inter({ subsets: ["latin"] });
 

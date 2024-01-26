@@ -48,6 +48,7 @@ const config: Config = {
           lighter: "var(--success-color-lighter)",
         },
         redishWhite: "var(--redish-white)",
+        blackOpacity: "var(--black-opacity)",
       },
       boxShadow: {
         "t-sm": "0 -1px 2px 0 rgba(0, 0, 0, 0.05)",

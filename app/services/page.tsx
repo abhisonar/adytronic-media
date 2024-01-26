@@ -1,4 +1,4 @@
-import { RouteLinkEnum } from "@/shared/constants/menu-list";
+import { RouteLinkEnum } from "@shared/constants/menu-list";
 import { SERVICES_DATA } from "@shared/data/services.data";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Link from "next/link";

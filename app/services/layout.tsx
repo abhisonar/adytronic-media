@@ -1,8 +1,7 @@
 "use client";
-import ServiceLoading from "@/app/services/loading";
-import { SERVICES_DATA } from "@/shared/data/services.data";
-import { IBreadcrumbs } from "@/ui/shared-resources/interfaces/IBreadcrumbs";
-import UiBreadcrumbs from "@/ui/ui-breadcrumbs/ui-breadcrumbs.component";
+import { SERVICES_DATA } from "@shared/data/services.data";
+import { IBreadcrumbs } from "@ui/shared-resources/interfaces/IBreadcrumbs";
+import UiBreadcrumbs from "@ui/ui-breadcrumbs/ui-breadcrumbs.component";
 import { useParams } from "next/navigation";
 import React, { Suspense, useState, useEffect } from "react";
 

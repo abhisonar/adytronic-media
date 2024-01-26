@@ -2,11 +2,11 @@
 
 import React from "react";
 import UiHeaderChip from "@ui/ui-header-chip/ui-header-chip.component";
-import UiButton from "@/ui/ui-button/ui-button.component";
+import UiButton from "@ui/ui-button/ui-button.component";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { SERVICES_DATA } from "@shared/data/services.data";
 import Link from "next/link";
-import { RouteLinkEnum } from "@/shared/constants/menu-list";
+import { RouteLinkEnum } from "@shared/constants/menu-list";
 
 const ServicesSection = () => {
   return (
