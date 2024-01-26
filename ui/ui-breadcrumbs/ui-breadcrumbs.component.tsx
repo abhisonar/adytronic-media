@@ -1,6 +1,6 @@
 import React from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import { IBreadcrumbs } from "@/ui/shared-resources/interfaces/IBreadcrumbs";
+import { IBreadcrumbs } from "@ui/shared-resources/interfaces/IBreadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Link from "next/link";
 import "./ui-breadcrumbs.component.scss";
