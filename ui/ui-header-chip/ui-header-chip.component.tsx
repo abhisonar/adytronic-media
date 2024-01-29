@@ -9,6 +9,7 @@ interface IUiHeaderChip {
   classRoot?: string;
   showSideBullets?: boolean;
   bulletsColor?: keyof typeof IconColorEnum;
+  bulletSize?: string;
 }
 
 const UiHeaderChip: React.FC<IUiHeaderChip> = ({
@@ -17,13 +18,14 @@ const UiHeaderChip: React.FC<IUiHeaderChip> = ({
   classRoot,
   clasName,
   bulletsColor = "primary",
+  bulletSize = "small",
 }) => {
   const getSideBullet = () => {
     return (
       <div className="flex gap-1 items-center w-full">
-        <FiberManualRecordIcon color={bulletsColor} style={{ fontSize: "small" }} />
+        <FiberManualRecordIcon color={bulletsColor} style={{ fontSize: bulletSize }} />
         <div className="text-wrap">{children}</div>
-        <FiberManualRecordIcon color={bulletsColor} style={{ fontSize: "small" }} />
+        <FiberManualRecordIcon color={bulletsColor} style={{ fontSize: bulletSize }} />
       </div>
     );
   };

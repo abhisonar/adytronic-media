@@ -7,6 +7,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { SERVICES_DATA } from "@shared/data/services.data";
 import Link from "next/link";
 import { RouteLinkEnum } from "@shared/constants/menu-list";
+import { warn } from "console";
+import ServiceCard from "@shared/components/feature/ServiceCard/service-card.component";
 
 const ServicesSection = () => {
   return (
@@ -40,29 +42,14 @@ const ServicesSection = () => {
       </div>
       <div className="flex flex-col gap-3 mt-5 w-full lg:items-end basis-1/2 lg:mt-0">
         {SERVICES_DATA.slice(0, 2).map((item, index) => (
-          <div
-            className={`${item.bgColor} flex flex-col gap-2 p-3 justify-center w-full rounded-xl max-w-[700px] lg:h-[180px] lg:p-8 lg:justify-center`}
+          <ServiceCard
+            color={item.color as string}
+            description={item.desciption}
+            img={item.img}
+            index={index + 1}
+            title={item.title}
             key={index}
-            data-aos="fade-up"
-            data-aos-duration={1000 * (index + 1)}>
-            <div className="flex justify-between">
-              <span className="font-semibold text-md lg:text-lg">{item.title}</span>
-              <div className={` ${item.iconBgColor} p-3 rounded-full text-white text-md`}>
-                {item.icon}
-              </div>
-            </div>
-            <Link
-              href={`${RouteLinkEnum.SERVICES}/${item.slug}`}
-              className="flex gap-2 items-center bg-white w-fit px-4 py-1 rounded-full cursor-pointer">
-              <div className={`${item.iconBgColor} text-white rounded-full`}>
-                <ArrowForwardIcon />
-              </div>
-              <span
-                className={`text-sm font-medium transition-all duration-300 hover:${item.textColor}`}>
-                READ MORE
-              </span>
-            </Link>
-          </div>
+          />
         ))}
       </div>
     </div>

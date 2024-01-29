@@ -6,7 +6,7 @@ import React from "react";
 
 const PortfolioSection = () => {
   return (
-    <div className="bg-portfolio-pattern bg-center bg-no-repeat bg-cover min-h-[100px] flex flex-col items-center pt-5 gap-3">
+    <div className="bg-portfolio-pattern bg-center bg-no-repeat bg-cover min-h-[100px] flex flex-col items-center py-5 gap-3">
       <UiHeaderChip bulletsColor="success">
         <span className="text-sm">Check our Work</span>
       </UiHeaderChip>
