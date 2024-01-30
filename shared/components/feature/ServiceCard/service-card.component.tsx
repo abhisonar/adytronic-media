@@ -1,3 +1,8 @@
+import {
+  BackgroundDefaultColorVarient,
+  BackgroundLightColorVarient,
+  BorderColorVarient,
+} from "@ui/shared-resources/class/ColorVarients";
 import React from "react";
 
 interface IServiceCard {
@@ -11,7 +16,9 @@ interface IServiceCard {
 const ServiceCard: React.FC<IServiceCard> = ({ title, color, description, img, index = 1 }) => {
   return (
     <div
-      className={`relative group bg-${color}-lighter border-${color}-default border overflow-hidden flex ${
+      className={`relative group ${BackgroundLightColorVarient[color]} ${
+        BorderColorVarient[color]
+      } border overflow-hidden flex ${
         index % 2 === 0 ? "flex-row-reverse" : "flex-row"
       } gap-2 justify-between h-[180px] w-full rounded-xl max-w-[700px] lg:h-full`}
       // data-aos="fade-up"
@@ -19,7 +26,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ title, color, description, img, i
     >
       <div className=" flex flex-col gap-2 p-6 justify-between basis-[70%]">
         <span className={`font-semibold text-md lg:text-lg text-${color}-default`}>{title}</span>
-        <span className={`text-[.8rem] selection:bg-${color}-default selection:text-white`}>
+        <span className={`text-[.8rem] selection:${BackgroundDefaultColorVarient[color]} `}>
           {description}
         </span>
       </div>
