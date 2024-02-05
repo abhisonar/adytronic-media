@@ -41,7 +41,7 @@ const FooterComponent = () => {
         </div>
         <div className="flex flex-col md:flex-row w-full justify-between gap-y-3 text-sm">
           <p className="text-center">
-            ©Copy RIght @{currYear} All Rights Reserved - Adytronic Media
+            ©Copy Right @{currYear} All Rights Reserved - Adytronic Media
           </p>
           <div className="flex gap-x-4 justify-center flex-wrap">
             <a href="#privacy" className="hover:text-success-default">
