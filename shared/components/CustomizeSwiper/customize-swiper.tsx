@@ -50,7 +50,7 @@ const CustomizeSwiper = <T,>({
       wrapperClass={`!ease-linear ${wrapperClass || ""}`}
       className="w-[96%] h-full">
       {data.map((item, index) => (
-        <SwiperSlide key={index} className="flex justify-center items-center w-full">
+        <SwiperSlide key={index} className="!flex justify-center items-center w-full">
           {templateFun && templateFun(item)}
         </SwiperSlide>
       ))}

@@ -33,13 +33,17 @@ const TestimonialSection = () => {
         slidesPerView: 3,
         centeredSlides: false,
       },
+      1250: {
+        slidesPerView: 4,
+        centeredSlides: false,
+      },
     },
   });
 
   const testimonialTemplate = (data: ITestimonial) => {
     return (
-      <div className="flex flex-col h-[25rem] max-w-[20rem] w-full items-center">
-        <div className="bg-white  basis-2/3 p-3 pt-5 rounded-lg flex flex-col justify-start items-center gap-y-6">
+      <div className="flex flex-col h-[26rem] max-w-[20rem] w-full items-center">
+        <div className="bg-white  basis-[80%] p-3 pt-5 rounded-lg flex flex-col justify-start items-center gap-y-6">
           <div className="p-3 bg-primary-lighter rounded-full">
             <FormatQuoteRoundedIcon fontSize="medium" className="text-primary-default" />
           </div>

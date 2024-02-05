@@ -33,6 +33,13 @@ const config: Config = {
         "hero-pattern": "url('/assets/hero-section/slider-grident-bg.png')",
         "hero-img-1": "url('/assets/hero-section/hero-1.png')",
         "portfolio-pattern": "url('/assets/portfolio/case-grident-shape.png')",
+        instgramGradient:
+          "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)",
+        "service-img": "url('/assets/services/service-header.svg')",
+      },
+      backgroundColor: {
+        facebook: "#4064AC",
+        linkedin: "#0077B5",
       },
       colors: {
         primary: {
@@ -49,6 +56,9 @@ const config: Config = {
         },
         redishWhite: "var(--redish-white)",
         blackOpacity: "var(--black-opacity)",
+        facebookBlue: "var(--facebook-blue)",
+        linkedinBlue: "var(--linkedin-blue)",
+        instagramPink: "var(--instagram-pink)",
       },
       boxShadow: {
         "t-sm": "0 -1px 2px 0 rgba(0, 0, 0, 0.05)",

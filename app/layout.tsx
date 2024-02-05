@@ -20,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
         <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></Script>
+        <Script src="https://kit.fontawesome.com/b8255e623e.js" crossOrigin="anonymous"></Script>
       </head>
       <AOSInit />
       <body className={inter.className}>

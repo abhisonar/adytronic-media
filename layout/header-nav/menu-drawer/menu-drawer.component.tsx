@@ -26,11 +26,7 @@ const MenuDrawer: React.FC<IMenuDrawer> = ({ isMenuDrawerOpen, menuClicked }) =>
       <div className="p-3 text-white">
         {/* Menu  */}
         <div className="flex justify-between items-center h-[50px] mb-9">
-          <img
-            className="w-[142px]"
-            src="https://data.themeim.com/html/sixart/assets/img/logo/logo.png"
-            alt=""
-          />
+          <img className="w-[142px]" src="/assets/logo_white.png" alt="" />
           <CloseRoundedIcon
             fontSize="large"
             className="text-gray-400 !transition !duration-200 !ease-linear hover:text-white  cursor-pointer"

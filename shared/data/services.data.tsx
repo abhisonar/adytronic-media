@@ -17,6 +17,16 @@ export interface IServiceData {
 
 export const SERVICES_DATA: IServiceData[] = [
   {
+    slug: "website-design-and-developement",
+    title: "Website Design & Development",
+    icon: <CodeIcon />,
+    desciption:
+      "Immerse your audience in a seamless online experience. Our Website Design & Development services create responsive, user-friendly platforms tailored to your unique digital identity.",
+    category: ServiceCategoryEnums.DIGITAL_IDENTITY,
+    color: "primary",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706553982/adytronic_media/services/website-development_e9q75e.png",
+  },
+  {
     slug: "social-media-management",
     title: "Social Media Management",
     icon: <ConnectWithoutContactOutlinedIcon />,
@@ -35,6 +45,16 @@ export const SERVICES_DATA: IServiceData[] = [
     category: ServiceCategoryEnums.DIGITAL_IDENTITY,
     color: "success",
     img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706553983/adytronic_media/services/content-creation_k43xlk.png",
+  },
+  {
+    slug: "website-design-and-developement",
+    title: "Website Design & Development",
+    icon: <CodeIcon />,
+    desciption:
+      "Immerse your audience in a seamless online experience. Our Website Design & Development services create responsive, user-friendly platforms tailored to your unique digital identity.",
+    category: ServiceCategoryEnums.DIGITAL_IDENTITY,
+    color: "primary",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706553982/adytronic_media/services/website-development_e9q75e.png",
   },
   {
     slug: "website-design-and-developement",
@@ -141,16 +161,6 @@ export const SERVICES_DATA: IServiceData[] = [
     img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706556184/adytronic_media/services/voice-over_enmypi.png",
   },
   {
-    slug: "lead-generation",
-    title: "Lead Generation",
-    icon: <TrendingUpRoundedIcon />,
-    desciption:
-      "Boost customer acquisition with targeted lead-generation strategies. Our data-driven approach connects your brand with potential customers for maximum impact.",
-    category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
-    color: "success",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706556549/adytronic_media/services/lead-generation_tv77ar.png",
-  },
-  {
     slug: "facebook-instagram-ads",
     title: "Facebook & Instagram Ads",
     icon: <TrendingUpRoundedIcon />,
@@ -159,6 +169,16 @@ export const SERVICES_DATA: IServiceData[] = [
     category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
     color: "warn",
     img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706556548/adytronic_media/services/facebook-insta-ads_wjuzrw.png",
+  },
+  {
+    slug: "lead-generation",
+    title: "Lead Generation",
+    icon: <TrendingUpRoundedIcon />,
+    desciption:
+      "Boost customer acquisition with targeted lead-generation strategies. Our data-driven approach connects your brand with potential customers for maximum impact.",
+    category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
+    color: "success",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706556549/adytronic_media/services/lead-generation_tv77ar.png",
   },
   {
     slug: "ivr-call-and-bulk-sms",

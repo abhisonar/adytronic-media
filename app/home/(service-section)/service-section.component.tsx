@@ -1,16 +1,32 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import UiHeaderChip from "@ui/ui-header-chip/ui-header-chip.component";
 import UiButton from "@ui/ui-button/ui-button.component";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { SERVICES_DATA } from "@shared/data/services.data";
+import { IServiceData, SERVICES_DATA } from "@shared/data/services.data";
 import Link from "next/link";
 import { RouteLinkEnum } from "@shared/constants/menu-list";
-import { warn } from "console";
 import ServiceCard from "@shared/components/feature/ServiceCard/service-card.component";
+import { groupBy } from "lodash";
 
 const ServicesSection = () => {
+  const [serviceData, setserviceData] = useState<IServiceData[]>(SERVICES_DATA);
+  const [groupedServiceData, setGroupedServiceData] = useState<
+    { category: string; services: IServiceData[] }[]
+  >([]);
+
+  useEffect(() => {
+    getGroupedData();
+  }, [serviceData]);
+
+  function getGroupedData() {
+    setGroupedServiceData([]);
+    const data = groupBy(serviceData, "category");
+
+    Object.keys(data).forEach((key, index) => {
+      setGroupedServiceData((prev) => [...prev, { category: key, services: data[key] }]);
+    });
+  }
   return (
     <div
       className="flex flex-col pb-10 px-5 pt-[10px] bg-white lg:pt-[200px]:px-[80px] lg:flex-row gap-2 lg:px-[80px] lg:justify-between"
@@ -41,13 +57,13 @@ const ServicesSection = () => {
         </div>
       </div>
       <div className="flex flex-col gap-3 mt-5 w-full lg:items-end basis-1/2 lg:mt-0">
-        {SERVICES_DATA.slice(0, 2).map((item, index) => (
+        {groupedServiceData.map((item, index) => (
           <ServiceCard
-            color={item.color as string}
-            description={item.desciption}
-            img={item.img}
+            color={item.services[0].color as string}
+            description={item.services[0].desciption}
+            img={item.services[0].img}
             index={index + 1}
-            title={item.title}
+            title={item.services[0].title}
             key={index}
           />
         ))}
