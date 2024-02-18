@@ -14,7 +14,7 @@ const TermsOfUseComponent = () => {
         <li>
           <strong>Use of the Website:</strong> You may use our website for lawful purposes only. You
           are prohibited from engaging in any activity that could harm, disable, or impair our
-          website or interfere with others' use.
+          website or interfere with others&apos; use.
         </li>
         <li>
           <strong>Intellectual Property:</strong> All content on this website, including text,
