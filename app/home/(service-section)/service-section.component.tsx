@@ -42,7 +42,9 @@ const ServicesSection = () => {
         </div>
         <div className="flex flex-col">
           <p className="text-md mt-2 lg:text-1xl">
-            We&apos;ll ensure you always get the best Digital Service
+            We specialize in providing superior digital services, tailored to meet your unique
+            needs. From web development to online marketing, our commitment is to ensure you
+            consistently receive the best digital solutions for your business success.
           </p>
           <Link href={RouteLinkEnum.SERVICES}>
             <UiButton

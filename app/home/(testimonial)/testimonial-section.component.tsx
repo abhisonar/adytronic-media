@@ -47,7 +47,7 @@ const TestimonialSection = () => {
           <div className="p-3 bg-primary-lighter rounded-full">
             <FormatQuoteRoundedIcon fontSize="medium" className="text-primary-default" />
           </div>
-          <span className="text-sm text-center px-5">{data.comment}</span>
+          <span className="text-[.7rem] text-justify px-3">{data.comment}</span>
         </div>
         <div className="w-[100px] -mt-[35px]">
           <img

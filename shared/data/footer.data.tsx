@@ -20,7 +20,7 @@ export const FOOTER_LINKS_DATA: Array<IFooterLinks> = [
     subCategories: [
       {
         icon: <FmdGoodOutlinedIcon fontSize="small" />,
-        title: "Address",
+        title: "Ashok Nagar, Satpur, Nashik - 422012",
       },
       {
         icon: <EmailOutlinedIcon fontSize="small" />,

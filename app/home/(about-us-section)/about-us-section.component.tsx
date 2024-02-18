@@ -6,6 +6,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import UiHeaderChip from "@ui/ui-header-chip/ui-header-chip.component";
 import UiButton from "@ui/ui-button/ui-button.component";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutUsSection = () => {
   const theme = useTheme();
@@ -26,14 +27,16 @@ const AboutUsSection = () => {
           solutions and best protect.
         </p>
         <div className="flex mt-5 gap-3">
-          <UiButton
-            variant="contained"
-            clicked={() => {}}
-            color="primary"
-            size="large"
-            className="rounded-full !px-10 !py-3 !drop-shadow-lg">
-            <span className="text-md">About Us</span>
-          </UiButton>
+          <Link href={"/about-us"}>
+            <UiButton
+              variant="contained"
+              clicked={() => {}}
+              color="primary"
+              size="large"
+              className="rounded-full !px-10 !py-3 !drop-shadow-lg">
+              <span className="text-md">About Us</span>
+            </UiButton>
+          </Link>
         </div>
       </div>
       <div

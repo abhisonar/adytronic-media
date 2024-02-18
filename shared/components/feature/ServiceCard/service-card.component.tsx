@@ -20,13 +20,14 @@ const ServiceCard: React.FC<IServiceCard> = ({ title, color, description, img, i
         BorderColorVarient[color]
       } border overflow-hidden flex ${
         index % 2 === 0 ? "flex-row-reverse" : "flex-row"
-      } gap-2 justify-between h-[180px] w-full rounded-xl max-w-[700px] lg:h-full`}
+      } gap-2 justify-between h-[140px] w-full rounded-xl max-w-[700px] lg:h-full`}
       // data-aos="fade-up"
       // data-aos-duration={1000 * (index + 1)}
     >
-      <div className=" flex flex-col gap-2 p-6 justify-between basis-[70%]">
+      <div className="flex flex-col justify-center lg:justify-between gap-2 p-6 basis-[70%]">
         <span className={`font-semibold text-md lg:text-lg text-${color}-default`}>{title}</span>
-        <span className={`text-[.8rem] selection:${BackgroundDefaultColorVarient[color]} `}>
+        <span
+          className={`hidden lg:block text-[.8rem] selection:${BackgroundDefaultColorVarient[color]} `}>
           {description}
         </span>
       </div>

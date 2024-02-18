@@ -43,27 +43,27 @@ export interface ITestimonial {
 
 export const TESTIMONIAL_DATA: ITestimonial[] = [
   {
-    name: "Marathi Udyojak",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706726325/adytronic_media/clients/3_q34pyl.png",
+    name: "Marathi Growth Institute",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706726325/adytronic_media/clients/1_pv47be.png",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      "Adytronic played a crucial role in our social media success. With their expertise, our Instagram presence experienced exponential growth, reaching a wider audience and generating significant engagement. Additionally, their strategic management of Facebook ads resulted in a noticeable boost in sales and conversions. We greatly appreciate Adytronic's dedication to understanding our brand and delivering effective digital marketing solutions that drive tangible results.",
   },
   {
     name: "Daily Mahiti",
     img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706726325/adytronic_media/clients/2_ylca2r.png",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      "Adytronic's impact on our social media presence has been remarkable. Their video editing skills have transformed our content, making it more attractive and engaging to our audience. This, coupled with their adept management of our social media platforms, has led to significant growth in followers and overall engagement. We are consistently impressed by Adytronic's ability to capture our brand's essence and deliver content that resonates with our audience.",
   },
   {
-    name: "Science Acadeamy",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706726325/adytronic_media/clients/epper_sir_logo_zhgwvu.png",
+    name: "Space 9 Interiors",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706726324/adytronic_media/clients/space_9_logo_v6l1be.png",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      "We can't speak highly enough of Adytronic's graphic design and video editing capabilities. Their designs are not only visually stunning but also perfectly tailored to our brand identity. With their help, our social media channels have become more vibrant and appealing, attracting increased attention from our target audience. Adytronic's attention to detail and commitment to delivering the best designs for our social media platforms have been instrumental in enhancing our online presence.",
   },
   {
-    name: "Science Acadeamy",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706726325/adytronic_media/clients/epper_sir_logo_zhgwvu.png",
+    name: "Marathi Udyojak",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1706726325/adytronic_media/clients/3_q34pyl.png",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      "Adytronic consistently delivers exceptional quality in their social media designs. Their attention to detail and creativity shine through in every project they undertake. We've come to rely on Adytronic as our go-to agency for all our social media design needs because of their unwavering commitment to excellence. Their designs not only look great but also effectively communicate our brand's message, helping us stand out in a crowded digital landscape. Working with Adytronic has been a game-changer for our social media marketing efforts.",
   },
 ];
