@@ -15,9 +15,11 @@ const HeaderNav = () => {
   };
   return (
     <div className="header flex justify-between items-center shadow-sm h-[100px] w-full bg-transparent sticky ">
-      <div className="brand w-[220px] min-w-[160px] px-6 h-full flex items-center lg:border-r">
+      <Link
+        href="/"
+        className="brand w-[220px] min-w-[160px] px-6 h-full flex items-center lg:border-r">
         <img className="w-full object-cover" src={"/assets/logo.png"} alt="" />
-      </div>
+      </Link>
       {/* Mobile Navigation */}
       <div className="block mr-5 lg:hidden">
         <div className="p-2 shadow-md cursor-pointer" onClick={menuClicked}>

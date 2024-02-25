@@ -19,12 +19,13 @@ const HeroSection = () => {
         <UiHeaderChip>
           <span className="text-sm">Best Solution we offer you</span>
         </UiHeaderChip>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mt-7 max-w-100px">
-          Make a good plan & grow your business
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold mt-7 max-w-100px">
+          Transforming Visions into Digital Victories!
         </h1>
         <p className="text-md mt-7 lg:text-1xl">
-          We have almost 12+ years of experience for helping consulting services and business
-          solutions.
+          We help you achieve digital success by crafting customized strategies and leveraging our
+          expertise to elevate your brand&apos;s online presence, drive traffic, and boost
+          conversions.
         </p>
         <div className="flex flex-col items-center mt-5 gap-3 sm:flex-row">
           <UiButton

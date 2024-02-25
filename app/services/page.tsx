@@ -28,9 +28,9 @@ const ServicesPage = () => {
     <div>
       <div className="flex flex-col justify-center items-center pt-4 md:p-4">
         {groupedServiceData.map((item, index) => (
-          <div key={item.category} className="flex flex-col justify-center items-center">
+          <div key={item.category} className="flex flex-col justify-center items-center mb-5">
             <UiHeaderChip bulletsColor="primary" bulletSize="medium">
-              <span className="text-xl  lg:text-2xl font-bold">{item.category}</span>
+              <span className="text-sm lg:text-2xl font-bold">{item.category}</span>
             </UiHeaderChip>
             <div className="grid grid-cols-1 md:grid-cols-2  lg:gap-x-5 md:gap-x-3 p-4 gap-y-5 place-items-center">
               {item.services.map((item, index) => (

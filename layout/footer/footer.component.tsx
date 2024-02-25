@@ -20,41 +20,30 @@ const FooterComponent = () => {
         ))}
       </div>
       <div className="bg-black text-white p-4 md:px-20 md:pt-14 lg:px-24  min-h-[250px] flex flex-col justify-between">
-        <div className="flex flex-col lg:flex-row h-fit w-full">
-          <div className="basis-1/2">
-            {FOOTER_LINKS_DATA.map((item) => (
-              <div className="flex flex-col gap-y-2" key={item.category}>
-                <h1 className="font-bold uppercase">{item.category}</h1>
-                <div className="flex flex-col gap-y-2">
-                  {item?.subCategories?.length &&
-                    item.subCategories.map((subCat) => (
-                      <div key={subCat.title} className="text-sm flex gap-2">
-                        {subCat?.icon && subCat.icon}
-                        {subCat?.isLink ? (
-                          <a href={subCat.link}>{subCat.title}</a>
-                        ) : (
-                          <span>{subCat.title}</span>
-                        )}
-                      </div>
-                    ))}
-                </div>
+        <div className="flex justify-between gap-x-3">
+          {FOOTER_LINKS_DATA.map((item) => (
+            <div className="flex flex-col gap-y-2 w-[20rem]" key={item.category}>
+              <h1 className="font-bold uppercase">{item.category}</h1>
+              <div className="flex flex-col gap-y-2">
+                {item?.subCategories?.length &&
+                  item.subCategories.map((subCat) => (
+                    <div
+                      key={subCat.title}
+                      className="text-sm flex gap-2 hover:text-success-default">
+                      {subCat?.icon && subCat.icon}
+                      {subCat?.link ? (
+                        <a href={subCat.link}>{subCat.title}</a>
+                      ) : (
+                        <span>{subCat.title}</span>
+                      )}
+                    </div>
+                  ))}
               </div>
-            ))}
-          </div>
-          <div className="flex flex-col gap-x-4 gap-y-3 justify-center basis-1/2 mt-3 lg:mt-0">
-            <Link href="/privacy-policy" className="hover:text-success-default">
-              Privacy Policy
-            </Link>
-            <Link href="/terms-of-use" className="hover:text-success-default">
-              Terms of Use
-            </Link>
-            <Link href="/sales-and-refunds" className="hover:text-success-default">
-              Sales and Refunds
-            </Link>
-          </div>
+            </div>
+          ))}
         </div>
         <p className="text-center mt-3">
-          ©Copy Right @{currYear} All Rights Reserved - Adytronic Media
+          ©Copyright @{currYear} All Rights Reserved - Adytronic Media
         </p>
       </div>
     </div>

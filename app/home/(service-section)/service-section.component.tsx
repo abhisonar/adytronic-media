@@ -29,19 +29,19 @@ const ServicesSection = () => {
   }
   return (
     <div
-      className="flex flex-col pb-10 px-5 pt-[10px] bg-white lg:pt-[200px]:px-[80px] lg:flex-row gap-2 lg:px-[80px] lg:justify-between"
+      className="flex flex-col pb-10 px-5 pt-[10px] bg-white lg:pt-[200px]:px-[80px] gap-2 lg:px-[80px] lg:justify-between"
       id="services">
-      <div className="flex flex-col justify-between basis-1/2">
-        <div className="flex flex-col">
+      <div className="flex flex-col items-center basis-1/2">
+        <div className="flex flex-col items-center">
           <UiHeaderChip bulletsColor="warning">
             <span className="font-medium text-sm">What we can do for you?</span>
           </UiHeaderChip>
-          <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mt-7 max-w-100px">
+          <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mt-7 max-w-100px text-center">
             Service we can help you with
           </h1>
         </div>
-        <div className="flex flex-col">
-          <p className="text-md mt-2 lg:text-1xl">
+        <div className="flex flex-col items-center mb-2">
+          <p className="text-md mt-2 lg:text-1xl text-center">
             We specialize in providing superior digital services, tailored to meet your unique
             needs. From web development to online marketing, our commitment is to ensure you
             consistently receive the best digital solutions for your business success.
@@ -58,7 +58,7 @@ const ServicesSection = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-3 mt-5 w-full lg:items-end basis-1/2 lg:mt-0">
+      <div className="flex flex-wrap justify-center gap-3 mt-5 w-full lg:items-end basis-1/2 lg:mt-0">
         {groupedServiceData.map((item, index) => (
           <ServiceCard
             color={item.services[0].color as string}
@@ -67,6 +67,7 @@ const ServicesSection = () => {
             index={index + 1}
             title={item.services[0].title}
             key={index}
+            className="basis-[100%] md:basis-[47%]"
           />
         ))}
       </div>

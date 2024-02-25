@@ -32,4 +32,38 @@ export const FOOTER_LINKS_DATA: Array<IFooterLinks> = [
       },
     ],
   },
+  {
+    category: "Pages",
+    subCategories: [
+      {
+        title: "Services",
+        link: "/services",
+      },
+      {
+        title: "About Us",
+        link: "/about-us",
+      },
+      {
+        title: "Contact Us",
+        link: "/contact-us",
+      },
+    ],
+  },
+  {
+    category: "Legal Links",
+    subCategories: [
+      {
+        title: "Privacy Policy",
+        link: "/privacy-policy",
+      },
+      {
+        title: "Terms of Use",
+        link: "/terms-of-use",
+      },
+      {
+        title: "Sales and Refunds",
+        link: "/sales-and-refunds",
+      },
+    ],
+  },
 ];
