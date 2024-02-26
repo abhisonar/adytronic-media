@@ -29,7 +29,7 @@ const ServicesSection = () => {
   }
   return (
     <div
-      className="flex flex-col pb-10 px-5 pt-[10px] bg-white lg:pt-[200px]:px-[80px] gap-2 lg:px-[80px] lg:justify-between"
+      className="flex flex-col items-center pb-10 px-5 pt-[10px] bg-white lg:pt-[200px]:px-[80px] gap-2 lg:px-[80px] lg:justify-between"
       id="services">
       <div className="flex flex-col items-center basis-1/2">
         <div className="flex flex-col items-center">
@@ -46,31 +46,31 @@ const ServicesSection = () => {
             needs. From web development to online marketing, our commitment is to ensure you
             consistently receive the best digital solutions for your business success.
           </p>
-          <Link href={RouteLinkEnum.SERVICES}>
-            <UiButton
-              variant="contained"
-              clicked={() => {}}
-              color="primary"
-              size="large"
-              className="!rounded-2xl !mt-4 !px-10 !py-3 !drop-shadow-lg w-fit">
-              <span className="text-md">See All Services</span>
-            </UiButton>
-          </Link>
         </div>
       </div>
       <div className="flex flex-wrap justify-center gap-3 mt-5 w-full lg:items-end basis-1/2 lg:mt-0">
-        {groupedServiceData.map((item, index) => (
+        {serviceData.slice(0, 4).map((item, index) => (
           <ServiceCard
-            color={item.services[0].color as string}
-            description={item.services[0].desciption}
-            img={item.services[0].img}
+            color={item.color as string}
+            description={item.desciption}
+            img={item.img}
             index={index + 1}
-            title={item.services[0].title}
+            title={item.title}
             key={index}
             className="basis-[100%] md:basis-[47%]"
           />
         ))}
       </div>
+      <Link href={RouteLinkEnum.SERVICES}>
+        <UiButton
+          variant="contained"
+          clicked={() => {}}
+          color="primary"
+          size="large"
+          className="!rounded-2xl !mt-4 !px-10 !py-3 !drop-shadow-lg w-fit">
+          <span className="text-md">See All Services</span>
+        </UiButton>
+      </Link>
     </div>
   );
 };

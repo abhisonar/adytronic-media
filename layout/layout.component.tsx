@@ -21,10 +21,16 @@ const LayoutComponent: React.FC<ILayout> = ({ children }) => {
       {layoutLoading ? (
         <UiLoader />
       ) : (
-        <div className="app-layout bg-redishWhite min-h-screen">
+        <div className="app-layout bg-redishWhite min-h-screen relative">
           <HeaderNav />
           <PageLayout>{children}</PageLayout>
           <FooterComponent />
+          <a
+            href="https://wa.link/taujgs"
+            target="_blank"
+            className="fixed bottom-4 left-4 w-[50px] h-[50px] z-10">
+            <img src="/assets/whatsapp_icon.webp"></img>
+          </a>
         </div>
       )}
     </>

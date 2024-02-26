@@ -36,12 +36,6 @@ const HeroSection = () => {
             className="rounded-full !px-3 !py-3 !drop-shadow-lg !w-fit">
             <span className="text-sm">Download Brochure</span>
           </UiButton>
-          <div className="flex items-center gap-3 p-1 cursor-pointer">
-            <div className="p-3 shadow-md cursor-pointer bg-warn-default rounded-full flex justify-center items-center">
-              <AlternateEmailRoundedIcon fontSize="small" className="text-white" />
-            </div>
-            <p className="font-medium">Contact Us</p>
-          </div>
         </div>
       </div>
       <div

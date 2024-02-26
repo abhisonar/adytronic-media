@@ -37,6 +37,27 @@ export const SERVICES_DATA: IServiceData[] = [
     img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873628/adytronic_media/services/Social_Media_Management_dwj8ro.png",
   },
   {
+    slug: "graphics-designing",
+    title: "Graphics Designing",
+    icon: <VideoSettingsRoundedIcon />,
+    desciption:
+      "Transform ideas into captivating visuals with our Graphics design services. Our skilled designers ensure your brand graphics stand out in the competitive digital landscape.",
+    category: ServiceCategoryEnums.BRANDING_DESIGNING,
+
+    color: "primary",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873622/adytronic_media/services/Graphics_Designing_iqn4b4.png",
+  },
+  {
+    slug: "facebook-instagram-ads",
+    title: "Facebook & Instagram Ads",
+    icon: <TrendingUpRoundedIcon />,
+    desciption:
+      "Maximize your social media presence with expertly crafted Facebook and Instagram Ad campaigns. We optimize for conversions and brand visibility in the digital sphere.",
+    category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
+    color: "warn",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873622/adytronic_media/services/Facebook_Instagram_Ads_snqddb.png",
+  },
+  {
     slug: "content-creation",
     title: "Content Creation",
     icon: <ConnectWithoutContactOutlinedIcon />,
@@ -66,17 +87,6 @@ export const SERVICES_DATA: IServiceData[] = [
     category: ServiceCategoryEnums.DIGITAL_IDENTITY,
     color: "warn",
     img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873629/adytronic_media/services/App_Development_dv2jwx.png",
-  },
-  {
-    slug: "graphics-designing",
-    title: "Graphics Designing",
-    icon: <VideoSettingsRoundedIcon />,
-    desciption:
-      "Transform ideas into captivating visuals with our Graphics design services. Our skilled designers ensure your brand graphics stand out in the competitive digital landscape.",
-    category: ServiceCategoryEnums.BRANDING_DESIGNING,
-
-    color: "primary",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873622/adytronic_media/services/Graphics_Designing_iqn4b4.png",
   },
   {
     slug: "creating-graphics-and-poster-designing",
@@ -139,16 +149,6 @@ export const SERVICES_DATA: IServiceData[] = [
     category: ServiceCategoryEnums.BRANDING_DESIGNING,
     color: "primary",
     img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873624/adytronic_media/services/Voice_Over_hy0xc0.png",
-  },
-  {
-    slug: "facebook-instagram-ads",
-    title: "Facebook & Instagram Ads",
-    icon: <TrendingUpRoundedIcon />,
-    desciption:
-      "Maximize your social media presence with expertly crafted Facebook and Instagram Ad campaigns. We optimize for conversions and brand visibility in the digital sphere.",
-    category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
-    color: "warn",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873622/adytronic_media/services/Facebook_Instagram_Ads_snqddb.png",
   },
   {
     slug: "lead-generation",

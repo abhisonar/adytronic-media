@@ -24,7 +24,7 @@ export const FOOTER_LINKS_DATA: Array<IFooterLinks> = [
       },
       {
         icon: <EmailOutlinedIcon fontSize="small" />,
-        title: "info@adytronic.com",
+        title: "contact@adytronic.com",
       },
       {
         icon: <LocalPhoneOutlinedIcon fontSize="small" />,
@@ -42,10 +42,6 @@ export const FOOTER_LINKS_DATA: Array<IFooterLinks> = [
       {
         title: "About Us",
         link: "/about-us",
-      },
-      {
-        title: "Contact Us",
-        link: "/contact-us",
       },
     ],
   },

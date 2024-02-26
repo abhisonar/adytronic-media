@@ -36,10 +36,10 @@ export const MAIN_MENUS: IMainMenu[] = [
     subLink: `#about-us`,
     hasSubMenu: false,
   },
-  {
-    label: "CONTACT",
-    link: RouteLinkEnum.CONTACT_US,
-    subLink: `#contact-us`,
-    hasSubMenu: false,
-  },
+  // {
+  //   label: "CONTACT",
+  //   link: RouteLinkEnum.CONTACT_US,
+  //   subLink: `#contact-us`,
+  //   hasSubMenu: false,
+  // },
 ];
