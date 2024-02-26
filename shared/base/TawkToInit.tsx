@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 
 const TawkToInit = () => {
   useEffect(() => {
-    var Tawk_API = Tawk_API || {},
+    var Tawk_API: any = Tawk_API || {},
       Tawk_LoadStart = new Date();
     (function () {
       var s1 = document.createElement("script"),
