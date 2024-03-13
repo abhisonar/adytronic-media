@@ -23,7 +23,7 @@ const AboutUsSection = () => {
           We are dynamic team of creative design and development
         </h1>
         <p className="text-md mt-7 lg:text-1xl">
-          We have almost 12+ years of experience for helping consulting services and business
+          We have almost 3+ years of experience for helping consulting services and business
           solutions and best protect.
         </p>
         <div className="flex mt-5 gap-3">

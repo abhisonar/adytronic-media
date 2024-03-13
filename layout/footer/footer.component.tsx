@@ -19,22 +19,22 @@ const FooterComponent = () => {
           </a>
         ))}
       </div>
-      <div className="bg-black text-white p-4 md:px-20 md:pt-14 lg:px-24  min-h-[250px] flex flex-col justify-between">
-        <div className="flex justify-between gap-x-3">
+      <div className="bg-black text-white p-4 md:px-16 md:pt-14 lg:px-24  min-h-[250px] flex flex-col justify-between">
+        <div className="flex flex-col md:flex-row justify-between gap-4">
           {FOOTER_LINKS_DATA.map((item) => (
-            <div className="flex flex-col gap-y-2 w-[20rem]" key={item.category}>
-              <h1 className="font-bold uppercase">{item.category}</h1>
+            <div className="flex flex-col gap-y-2 w-full md:w-[20rem]" key={item.category}>
+              <h1 className="font-bold uppercase text-center md:text-left">{item.category}</h1>
               <div className="flex flex-col gap-y-2">
                 {item?.subCategories?.length &&
                   item.subCategories.map((subCat) => (
                     <div
                       key={subCat.title}
-                      className="text-sm flex gap-2 hover:text-success-default">
-                      {subCat?.icon && subCat.icon}
+                      className="text-sm flex gap-2 justify-center md:justify-start hover:text-success-default">
+                      {subCat?.icon && <span>{subCat.icon}</span>}
                       {subCat?.link ? (
                         <a href={subCat.link}>{subCat.title}</a>
                       ) : (
-                        <span>{subCat.title}</span>
+                        <span className="text-center md:text-left">{subCat.title}</span>
                       )}
                     </div>
                   ))}
@@ -42,8 +42,11 @@ const FooterComponent = () => {
             </div>
           ))}
         </div>
-        <p className="text-center mt-3">
-          ©Copyright @{currYear} All Rights Reserved - Adytronic Media
+        <p className="text-center text-sm mt-3">
+          ©Copyright @{currYear} All Rights Reserved -{" "}
+          <a href="https://adytronic.com" className="text-warn-default">
+            Adytronic Media
+          </a>
         </p>
       </div>
     </div>
