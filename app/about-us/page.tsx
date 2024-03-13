@@ -17,7 +17,7 @@ const AboutUsPage = () => {
           </p>
         </div>
         <div className="max-w-[350px] overflow-hidden" data-aos="fade-in" data-aos-duration="2000">
-          <img src="/assets/about-section/creativity.png" alt="creativity" />
+          <img src="/assets/about-section/creativity.webp" alt="creativity" />
         </div>
       </div>
       <div className="flex flex-col items-center lg:flex-row-reverse lg:justify-between">
@@ -40,7 +40,7 @@ const AboutUsPage = () => {
           </p>
         </div>
         <div className="max-w-[350px] overflow-hidden" data-aos="fade-in" data-aos-duration="2000">
-          <img src="/assets/about-section/who-we-are.png" alt="creativity" />
+          <img src="/assets/about-section/who-we-are.webp" alt="creativity" />
         </div>
       </div>
     </div>

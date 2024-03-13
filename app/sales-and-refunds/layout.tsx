@@ -5,7 +5,7 @@ const SalesAndRefundsLayoutComponent = ({ children }: { children: React.ReactNod
   return (
     <InfoLayoutComponent
       title={"Sales and Refunds"}
-      posterSrc="/assets/about-section/about-us.png"
+      posterSrc="/assets/about-section/about-us.webp"
       breadcrumbs={[
         { label: "Home", link: "/" },
         { label: "Sales and Refunds", link: "/terms-of-use" },

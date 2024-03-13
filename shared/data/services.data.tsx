@@ -24,7 +24,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Immerse your audience in a seamless online experience. Our Website Design & Development services create responsive, user-friendly platforms tailored to your unique digital identity.",
     category: ServiceCategoryEnums.DIGITAL_IDENTITY,
     color: "primary",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873629/adytronic_media/services/Website_Design_Development_wzbn4s.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351518/adytronic_media/services/Website_Design_Development_axm76e.webp",
   },
   {
     slug: "social-media-management",
@@ -34,7 +34,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Enhance your brand's online presence with our strategic Social Media Management. We curate engaging content, fostering community interaction to amplify your digital identity.",
     category: ServiceCategoryEnums.DIGITAL_IDENTITY,
     color: "warn",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873628/adytronic_media/services/Social_Media_Management_dwj8ro.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351519/adytronic_media/services/Social_Media_Management_mh1drv.webp",
   },
   {
     slug: "graphics-designing",
@@ -45,7 +45,7 @@ export const SERVICES_DATA: IServiceData[] = [
     category: ServiceCategoryEnums.BRANDING_DESIGNING,
 
     color: "primary",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873622/adytronic_media/services/Graphics_Designing_iqn4b4.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351522/adytronic_media/services/Graphics_Designing_uygusu.webp",
   },
   {
     slug: "facebook-instagram-ads",
@@ -55,7 +55,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Maximize your social media presence with expertly crafted Facebook and Instagram Ad campaigns. We optimize for conversions and brand visibility in the digital sphere.",
     category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
     color: "warn",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873622/adytronic_media/services/Facebook_Instagram_Ads_snqddb.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351524/adytronic_media/services/Facebook_Instagram_Ads_phpoux.webp",
   },
   {
     slug: "content-creation",
@@ -65,7 +65,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Craft compelling narratives and visually stunning content that resonates with your audience. Our Content Creation services ensure your brand message is both impactful and memorable.",
     category: ServiceCategoryEnums.DIGITAL_IDENTITY,
     color: "success",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873627/adytronic_media/services/Content_Creation_kvczll.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351526/adytronic_media/services/Content_Creation_nqohrp.webp",
   },
   {
     slug: "e-commerce-developement",
@@ -76,7 +76,7 @@ export const SERVICES_DATA: IServiceData[] = [
     category: ServiceCategoryEnums.DIGITAL_IDENTITY,
 
     color: "primary",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873633/adytronic_media/services/E-Commerce_Website_p63fb5.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351523/adytronic_media/services/E-Commerce_Website_rbutim.webp",
   },
   {
     slug: "app-developement",
@@ -86,7 +86,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Stay ahead with cutting-edge apps. From concept to deployment, our App Development services bring your ideas to life, ensuring seamless user experiences for a strong digital identity.",
     category: ServiceCategoryEnums.DIGITAL_IDENTITY,
     color: "warn",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873629/adytronic_media/services/App_Development_dv2jwx.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351525/adytronic_media/services/App_Development_rx3itg.webp",
   },
   {
     slug: "creating-graphics-and-poster-designing",
@@ -97,7 +97,7 @@ export const SERVICES_DATA: IServiceData[] = [
     category: ServiceCategoryEnums.BRANDING_DESIGNING,
 
     color: "warn",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873631/adytronic_media/services/Creating_Graphics_and_Poster_Designing_lr19sm.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351526/adytronic_media/services/Creating_Graphics_and_Poster_Designing_u8qtks.webp",
   },
   {
     slug: "product-packaging-and-labels",
@@ -108,7 +108,7 @@ export const SERVICES_DATA: IServiceData[] = [
     category: ServiceCategoryEnums.BRANDING_DESIGNING,
 
     color: "success",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873620/adytronic_media/services/Product_Packaging_and_Labels_ksi2ty.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351521/adytronic_media/services/Product_Packaging_and_Labels_pxdbwb.webp",
   },
   {
     slug: "video-editing",
@@ -118,7 +118,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Tell your brand story through expertly crafted videos. Our Video Editing services ensure your content is polished, engaging, and leaves a lasting impression on your audience.",
     category: ServiceCategoryEnums.BRANDING_DESIGNING,
     color: "primary",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873624/adytronic_media/services/Video_Editing_ba06fh.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351519/adytronic_media/services/Video_Editing_w9ad8n.webp",
   },
   {
     slug: "ad-films",
@@ -128,7 +128,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Bring your brand to life with professionally produced Ad-Films. From concept to execution, our team creates compelling visual narratives that resonate with your target audience.",
     category: ServiceCategoryEnums.BRANDING_DESIGNING,
     color: "warn",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873619/adytronic_media/services/Ad-Film_k9gcij.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351527/adytronic_media/services/Ad-Film_bsrunx.webp",
   },
   {
     slug: "product-shoot",
@@ -138,7 +138,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Highlight your products in the best light with our professional Product Shoot services. We capture the essence of your offerings, creating visuals that speak volumes.",
     category: ServiceCategoryEnums.BRANDING_DESIGNING,
     color: "success",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873622/adytronic_media/services/Product_Shoot_gtmtjd.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351522/adytronic_media/services/Product_Shoot_lh7wz1.webp",
   },
   {
     slug: "voice-over",
@@ -148,7 +148,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Enhance your brand's audio identity with our Voice Over services. Our versatile talents bring scripts to life, adding a distinctive and memorable touch to your brand content.",
     category: ServiceCategoryEnums.BRANDING_DESIGNING,
     color: "primary",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873624/adytronic_media/services/Voice_Over_hy0xc0.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351519/adytronic_media/services/Voice_Over_rdmkvl.webp",
   },
   {
     slug: "lead-generation",
@@ -158,7 +158,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Boost customer acquisition with targeted lead-generation strategies. Our data-driven approach connects your brand with potential customers for maximum impact.",
     category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
     color: "success",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873627/adytronic_media/services/Lead_Generation_rcck1s.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351519/adytronic_media/services/Lead_Generation_j7cksi.webp",
   },
   {
     slug: "ivr-call-and-bulk-sms",
@@ -168,7 +168,7 @@ export const SERVICES_DATA: IServiceData[] = [
       "Streamline communication with our IVR Call & Bulk SMS services. Enhance customer interactions and convey important messages efficiently for a seamless brand experience.",
     category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
     color: "primary",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873618/adytronic_media/services/IVR_Call_Bulk_SMS_qfhfrk.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351523/adytronic_media/services/IVR_Call_Bulk_SMS_gpu01a.webp",
   },
   {
     slug: "whatsapp-api-and-facebook-business-verification",
@@ -178,6 +178,6 @@ export const SERVICES_DATA: IServiceData[] = [
       "Establish trust and credibility with WhatsApp API integration and Facebook Business Verification. Secure the coveted green tick, signifying authenticity and reliability in the digital realm.",
     category: ServiceCategoryEnums.SOCIAL_MEDIA_ADVERTISING,
     color: "primary",
-    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1708873617/adytronic_media/services/Whatsapp_API_Facebook_Business_Verification_Green_Tick_fdrwsr.png",
+    img: "https://res.cloudinary.com/marathiudyojak/image/upload/v1710351518/adytronic_media/services/Whatsapp_API_Facebook_Business_Verification_Green_Tick_bloogt.webp",
   },
 ];

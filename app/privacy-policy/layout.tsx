@@ -5,7 +5,7 @@ const PrivacyPolicyLayoutComponent = ({ children }: { children: React.ReactNode 
   return (
     <InfoLayoutComponent
       title={"Privacy Policy"}
-      posterSrc="/assets/about-section/about-us.png"
+      posterSrc="/assets/about-section/about-us.webp"
       breadcrumbs={[
         { label: "Home", link: "/" },
         { label: "Privacy Policy", link: "/privacy-policy" },

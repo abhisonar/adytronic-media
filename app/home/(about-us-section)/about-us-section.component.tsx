@@ -45,7 +45,7 @@ const AboutUsSection = () => {
         data-aos-duration="2000">
         <div className="relative">
           <img
-            src={"/assets/about-section/about-img.jpg"}
+            src={"/assets/about-section/about-img.webp"}
             alt="hero-img-1"
             className="max-h-[450px]"
           />

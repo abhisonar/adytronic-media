@@ -5,7 +5,7 @@ const AboutUsLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <InfoLayoutComponent
       title={"About Us"}
-      posterSrc="/assets/about-section/about-us.png"
+      posterSrc="/assets/about-section/about-us.webp"
       breadcrumbs={[
         { label: "Home", link: "/" },
         { label: "About Us", link: "/about-us" },
