@@ -30,7 +30,7 @@ const ServiceCard: React.FC<IServiceCard> = ({
       // data-aos-duration={1000 * (index + 1)}
     >
       <div className={`service-card-img bg-white text-md  h-[150px] overflow-hidden rounded-lg`}>
-        <img src={img} alt="" className=" h-full w-full object-contain" />
+        <img src={img} alt="" className=" h-full w-full object-contain" loading="lazy" />
       </div>
       <div className="service-card-content flex flex-col justify-center lg:justify-between gap-2 p-0 basis-[40%] mb-3">
         <span className={`font-semibold text-md lg:text-xl text-${color}-default text-center`}>
